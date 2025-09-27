@@ -43,7 +43,7 @@ const btnTheme = document.getElementById("btnTheme");
 let darkMode = localStorage.getItem("darkMode") === "true";
 document.documentElement.classList.toggle("dark", darkMode);
 
-btnTheme.innerHTML = `<img src="/img/sol-y-luna.png" alt="tema" class="nav-icon">`;
+btnTheme.innerHTML = `<img src="../img/sol-y-luna.png" alt="tema" class="nav-icon">`;
 
 // Evento de click para cambiar tema
 
@@ -51,5 +51,5 @@ btnTheme.addEventListener("click", () => {
   darkMode = !darkMode;
   document.documentElement.classList.toggle("dark", darkMode);
   localStorage.setItem("darkMode", darkMode);
-  btnTheme.innerHTML = `<img src="/img/sol-y-luna.png" alt="tema" class="nav-icon">`;
+  btnTheme.innerHTML = `<img src="../img/sol-y-luna.png" alt="tema" class="nav-icon">`;
 });
