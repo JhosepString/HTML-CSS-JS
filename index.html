@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
 
@@ -15,57 +14,45 @@
   }
 
   h1 {
+  font-size: 2.5rem;   /* móviles */
+  color: #dde3e9;
+  text-align: center;
+}
 
-    font-size: 1.8rem;
-
-    color: #dde3e9;
-
-    text-align: center;
-
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;  /* tablets */
+    color: #16a085;
   }
-
-    @media (min-width: 768px) {
-
-    h1 {
-
-      font-size: 2.5rem;
-
-      color: #16a085;
-
-    }
-
-    body{
-
+  body {
     background: linear-gradient(135deg, #222a2b, #46385c);
+  }
+}
 
-    }
-
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 4.5rem;  /* escritorio */
+    color: #8e44ad;
+  }
+  body {
+    background: linear-gradient(135deg, #ff0000, #b30000);
   }
 
-
-      /* Escritorios (pantallas de 1024px o más) */
-
-  @media (min-width: 1024px) {
-
-    h1 {
-
-      font-size:xx-large;
-
-      color: #8e44ad;
-
+  button {
+      font-size: 1.5rem;       /* Tamaño de letra más grande */
+      padding: 1rem 2rem;      /* Más espacio dentro */
+      border-radius: 12px;
+      background: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
     }
+}
 
-    body{
-
-         /* Gradiente lineal rojo */
-
-    background: linear-gradient(135deg, #ff0000, #b30000);
-
-    }
 
    
 
-  }
 
 </style>
     
@@ -76,7 +63,7 @@
 
     <button type="button">
       <div>
-        <a href="html/tailwind.html">Inicio</a>
+        <a href="html/tailwind.html">tailwind página</a>
       </div>
     </button>
     
