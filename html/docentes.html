@@ -1,18 +1,14 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <title>Mi Portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body class="bg-gray-900 text-white">
 
-  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
-
-<div class="bg-gray-900">
   <header id = "navbar" class="fixed inset-x-0 top-0 z-50 transition-all duration-500 ease-in-out bg-transparent">
     <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
       <div class="flex lg:flex-1">
@@ -32,13 +28,11 @@
       <div class="hidden lg:flex lg:gap-x-12">
         <a href="tailwind.html" class="text-sm/6 font-semibold text-white">Inicio</a>
         <a href="docentes.html" class="text-sm/6 font-semibold text-white">Docentes</a>
-        <a href="estudiantes.html" class="text-sm/6 font-semibold text-white">Cursos</a>
+        <a href="Cursos.html" class="text-sm/6 font-semibold text-white">Cursos</a>
         <a href="unete.html" class="text-sm/6 font-semibold text-white">Únete</a>
         <a href="JS.html" class="text-sm/6 font-semibold text-white">JS</a>
       </div>
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
-      </div>
+
     </nav>
 
     <el-dialog>
@@ -62,13 +56,11 @@
                 <div class="space-y-2 py-6">
                   <a href="tailwind.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Inicio</a>
                   <a href="docentes.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Docentes</a>
-                  <a href="estudiantes.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Cursos</a>
+                  <a href="Cursos.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Cursos</a>
                   <a href="unete.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Únete</a>
                   <a href="JS.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">JS</a>
                 </div>
-                <div class="py-6">
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
-                </div>
+
               </div>
             </div>
           </el-dialog-panel>
@@ -78,96 +70,89 @@
 
   </header>
 
-  <main class="pt-20"> <!-- pt-20 para que no quede el header encima del contenido -->
-
+  <main class="pt-20">
     <section class="relative min-h-screen"> 
+      <img src="/img/Coar_ica_fondo2.jpg" alt="Fondo sección Docentes"
+        class="absolute inset-0 w-full h-full object-cover z-0" />
 
-        <img
-        src="/img/Coar_ica_fondo2.jpg"
-        alt="Fondo sección Leadership"
-        class="absolute inset-0 w-full h-full object-cover z-0"
-      />
-
-      <!-- DEGRADÉ encima de la imagen, pero debajo del contenido -->
       <div class="absolute inset-0 bg-gradient-to-tr from-black/70 to-indigo-700/40 z-10"></div>
 
-      <!-- CONTENIDO encima -->
       <div class="relative z-20 py-24 sm:py-32">
         <div class="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
           <div class="max-w-xl">
             <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-              Conoce a nuestros docentes
+              Nuestro equipo docente
             </h2>
             <p class="mt-6 text-lg text-gray-300">
-              Contamos con los mejores docentes en el país, profesionales con amplia experiencia en la enseñanza y dedicados 
-              a brindar una educación de calidad a nuestros estudiantes.
+              Profesionales apasionados por la enseñanza y con experiencia comprobada en diversas áreas académicas. 
+              Ellos inspiran, guían y acompañan a nuestros estudiantes en cada paso de su formación.
             </p>
           </div>
 
-          <!-- LISTA COMPLETA DE SOCIOS / LÍDERES -->
+          <!-- DOCENTES -->
           <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
             <li>
               <div class="flex items-center gap-x-6">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                     alt="Leslie" class="h-16 w-16 rounded-full ring-1 ring-white/10" />
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María López"
+                  class="h-16 w-16 rounded-full ring-1 ring-white/10" />
                 <div>
-                  <h3 class="text-base font-semibold tracking-tight text-white">Leslie Alexander</h3>
-                  <p class="text-sm font-semibold text-indigo-400">Co-Founder / CEO</p>
+                  <h3 class="text-base font-semibold tracking-tight text-white">María López</h3>
+                  <p class="text-sm font-semibold text-yellow-400">Profesora de Matemáticas</p>
                 </div>
               </div>
             </li>
 
             <li>
               <div class="flex items-center gap-x-6">
-                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                     alt="Michael" class="h-16 w-16 rounded-full ring-1 ring-white/10" />
+                <img src="https://randomuser.me/api/portraits/men/36.jpg" alt="Carlos Ramírez"
+                  class="h-16 w-16 rounded-full ring-1 ring-white/10" />
                 <div>
-                  <h3 class="text-base font-semibold tracking-tight text-white">Michael Foster</h3>
-                  <p class="text-sm font-semibold text-indigo-400">Co-Founder / CTO</p>
+                  <h3 class="text-base font-semibold tracking-tight text-white">Carlos Ramírez</h3>
+                  <p class="text-sm font-semibold text-yellow-400">Profesor de Historia</p>
                 </div>
               </div>
             </li>
 
             <li>
               <div class="flex items-center gap-x-6">
-                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                     alt="Dries" class="h-16 w-16 rounded-full ring-1 ring-white/10" />
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Javier Fernández"
+                  class="h-16 w-16 rounded-full ring-1 ring-white/10" />
                 <div>
-                  <h3 class="text-base font-semibold tracking-tight text-white">Dries Vincent</h3>
-                  <p class="text-sm font-semibold text-indigo-400">Business Relations</p>
+                  <h3 class="text-base font-semibold tracking-tight text-white">Javier Fernández</h3>
+                  <p class="text-sm font-semibold text-yellow-400">Coordinador Académico</p>
                 </div>
               </div>
             </li>
 
             <li>
               <div class="flex items-center gap-x-6">
-                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                     alt="Lindsay" class="h-16 w-16 rounded-full ring-1 ring-white/10" />
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Torres"
+                  class="h-16 w-16 rounded-full ring-1 ring-white/10" />
                 <div>
-                  <h3 class="text-base font-semibold tracking-tight text-white">Lindsay Walton</h3>
-                  <p class="text-sm font-semibold text-indigo-400">Front-end Developer</p>
+                  <h3 class="text-base font-semibold tracking-tight text-white">Ana Torres</h3>
+                  <p class="text-sm font-semibold text-yellow-400">Docente de Ciencias</p>
                 </div>
               </div>
             </li>
 
             <li>
               <div class="flex items-center gap-x-6">
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                     alt="Courtney" class="h-16 w-16 rounded-full ring-1 ring-white/10" />
+                <img src="https://randomuser.me/api/portraits/women/30.jpg" alt="Laura Martínez"
+                  class="h-16 w-16 rounded-full ring-1 ring-white/10" />
                 <div>
-                  <h3 class="text-base font-semibold tracking-tight text-white">Courtney Henry</h3>
-                  <p class="text-sm font-semibold text-indigo-400">Designer</p>
+                  <h3 class="text-base font-semibold tracking-tight text-white">Laura Martínez</h3>
+                  <p class="text-sm font-semibold text-yellow-400">Profesora de Literatura</p>
                 </div>
               </div>
             </li>
 
             <li>
               <div class="flex items-center gap-x-6">
-                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                     alt="Tom" class="h-16 w-16 rounded-full ring-1 ring-white/10" />
+                <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Pedro Castillo"
+                  class="h-16 w-16 rounded-full ring-1 ring-white/10" />
                 <div>
-                  <h3 class="text-base font-semibold tracking-tight text-white">Tom Cook</h3>
-                  <p class="text-sm font-semibold text-indigo-400">Director of Product</p>
+                  <h3 class="text-base font-semibold tracking-tight text-white">Pedro Castillo</h3>
+                  <p class="text-sm font-semibold text-yellow-400">Profesor de Inglés</p>
                 </div>
               </div>
             </li>
@@ -175,7 +160,6 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <script src="app.js"></script>
