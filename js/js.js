@@ -5,15 +5,18 @@ const sidebar = document.getElementById("sidebar");
 let collapsed = false;
 
 // --- Toggle Sidebar ---
+
 btn.addEventListener("click", () => {
   if (window.innerWidth <= 768) {
-    // 📱 Móvil
+
+    // Móvil
     sidebar.classList.toggle("show");
     btn.textContent = sidebar.classList.contains("show")
       ? "✕ Cerrar"
       : "☰ Menú";
   } else {
-    // 🖥️ Escritorio
+
+    // Escritorio
     collapsed = !collapsed;
     siteWrap.classList.toggle("collapsed", collapsed);
     btn.textContent = collapsed ? "☰ Plegar" : "✕ Expandir";
@@ -46,7 +49,6 @@ document.documentElement.classList.toggle("dark", darkMode);
 btnTheme.innerHTML = `<img src="../img/sol-y-luna.png" alt="tema" class="nav-icon">`;
 
 // Evento de click para cambiar tema
-
 btnTheme.addEventListener("click", () => {
   darkMode = !darkMode;
   document.documentElement.classList.toggle("dark", darkMode);

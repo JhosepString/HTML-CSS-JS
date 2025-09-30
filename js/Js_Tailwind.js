@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = document.getElementById("footer");
 
   // efecto navbar al hacer scroll
+  
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       navbar.classList.remove("bg-transparent");
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // efecto footer con IntersectionObserver
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
